@@ -305,7 +305,7 @@ if(info["file"]=="Housing.csv"):
 # train pre trained model of Random Forest Regresor from .pkl file and scale it
     elif(model=="Random Forest Regressor"):
        st.markdown(f"<h6 style='text-align: center;'>Model: Random Forest",unsafe_allow_html=True)  
-       model=pickle.load(open("Housing_Random_model.pkl","rb"))
+       model=pickle.load(open("housing_RandomForestRegressor.pkl","rb"))
         
        scaler=StandardScaler()
        x_train_scaled=scaler.fit_transform(x_train)
@@ -316,7 +316,7 @@ if(info["file"]=="Housing.csv"):
     elif(model=="XGBoost"):
         st.markdown(f"<h6 style='text-align: center;'>Model:XGBoost",unsafe_allow_html=True)  
         
-        model=pickle.load(open("housing_Random_]ForestRegressor.pkl","rb"))
+        model=pickle.load(open("Housing_XGBRegressor.pkl","rb"))
         
         scaler=StandardScaler()
         x_train_scaled=scaler.fit_transform(x_train)
