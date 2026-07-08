@@ -316,7 +316,7 @@ if(info["file"]=="Housing.csv"):
     elif(model=="XGBoost"):
         st.markdown(f"<h6 style='text-align: center;'>Model:XGBoost",unsafe_allow_html=True)  
         
-        model=pickle.load(open("Housing_XGBRegressor.pkl","rb"))
+        model=pickle.load(open("Housing_random_model.pkl","rb"))
         
         scaler=StandardScaler()
         x_train_scaled=scaler.fit_transform(x_train)
