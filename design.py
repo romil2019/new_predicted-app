@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from sklearn.metrics import r2_score
 from sklearn.metrics import accuracy_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+import joblib
 
 
 # preparing dataset object for House prediction
@@ -305,7 +305,7 @@ if(info["file"]=="Housing.csv"):
 # train pre trained model of Random Forest Regresor from .pkl file and scale it
     elif(model=="Random Forest Regressor"):
        st.markdown(f"<h6 style='text-align: center;'>Model: Random Forest",unsafe_allow_html=True)  
-       model=pickle.load(open("housing_RandomForestRegressor.pkl","rb"))
+       model=joblib.load(open("housing_RandomForestRegressor.pkl","rb"))
         
        scaler=StandardScaler()
        x_train_scaled=scaler.fit_transform(x_train)
