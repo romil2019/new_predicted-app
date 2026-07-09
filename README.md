@@ -174,7 +174,7 @@ streamlit run design.py
 
 Streamlit App:
 
-(Add your Streamlit URL here)
+link :-  https://romil-kumar-ml-app.streamlit.app/
 
 ---
 
@@ -182,8 +182,6 @@ Streamlit App:
 
 ### Home Page
 
-link for stramlit app:
-https://romil-kumar-ml-app.streamlit.app/)
 
 ### House Price Prediction
 
